@@ -6,10 +6,6 @@ describe FizzBuzz do
 
   context "Things with 3" do
 
-    it "returns 'fizz' for multiples of 3" do
-      expect(fb.fizz_buzz(3)).to eq('fizz')
-    end
-
     it "returns 'fizz' for 13" do
       expect(fb.fizz_buzz(13)).to eq('fizz')
     end
@@ -17,10 +13,6 @@ describe FizzBuzz do
   end
 
   context "Things with 5" do
-
-    it "returns 'buzz' for multiples of 5" do
-      expect(fb.fizz_buzz(5)).to eq('buzz')
-    end
 
     it "returns 'buzz' for 154" do
       expect(fb.fizz_buzz(154)).to eq('buzz')
@@ -82,3 +74,4 @@ describe FizzBuzz do
 
 
 end
+
