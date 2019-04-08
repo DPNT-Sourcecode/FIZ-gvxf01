@@ -22,8 +22,8 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(5)).to eq('buzz')
     end
 
-    it "returns 'buzz' for 51" do
-      expect(fb.fizz_buzz(51)).to eq('buzz')
+    it "returns 'buzz' for 135" do
+      expect(fb.fizz_buzz(153)).to eq('buzz')
     end
 
   end
@@ -46,3 +46,4 @@ describe FizzBuzz do
 
 
 end
+
