@@ -7,5 +7,3 @@ describe '#sum' do
   end
 
 end
-
-
