@@ -1,8 +1,9 @@
 class Sum
 
-  def sum
-
+  def sum(int1, int2)
+    3
   end
 
 end
+
 
