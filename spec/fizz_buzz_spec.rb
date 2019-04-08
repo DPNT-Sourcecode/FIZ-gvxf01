@@ -66,6 +66,10 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(33)).to eq('fizz fake deluxe')
     end
 
+    it "returns 'buzz fake deluxe' for 55" do
+      expect(fb.fizz_buzz(55)).to eq('buzz fake deluxe')
+    end
+
   end
 
   context "Leftovers" do
@@ -78,6 +82,7 @@ describe FizzBuzz do
 
 
 end
+
 
 
 
