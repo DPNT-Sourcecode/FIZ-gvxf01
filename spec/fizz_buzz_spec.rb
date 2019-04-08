@@ -12,6 +12,11 @@ describe FizzBuzz do
     expect(fb.fizz_buzz(5)).to eq('buzz')
   end
 
+  it "returns 'fizz buzz' for multiples of 3 and 5" do
+    expect(fb.fizz_buzz(15)).to eq('fizz buzz')
+  end
+
 end
+
 
 

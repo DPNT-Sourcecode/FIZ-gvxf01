@@ -2,9 +2,15 @@
 class FizzBuzz
 
   def fizz_buzz(number)
-    'fizz' if number % 3 == 0
-    'buzz' if number % 5 == 0
+    if number % 15 == 0
+      'fizz buzz'
+    elsif number % 3 == 0
+     'fizz'
+   elsif number % 5 == 0
+     'buzz'
+    end
   end
 
 end
+
 
