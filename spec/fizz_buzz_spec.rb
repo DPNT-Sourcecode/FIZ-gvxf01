@@ -16,7 +16,8 @@ describe FizzBuzz do
     expect(fb.fizz_buzz(15)).to eq('fizz buzz')
   end
 
+  it "returns '2' for 2" do
+    expect(fb.fizz_buzz(2)).to eq(2)
+  end
+
 end
-
-
-
