@@ -8,11 +8,9 @@ class FizzBuzz
     answer.push('fizz') if number % 3 == 0 || thing.include?("3")
     answer.push('buzz') if number % 5 == 0 || thing.include?("5")
 
-    if number % 3 == 0
-      answer.push('deluxe') if number > 10 && thing.uniq.length == 1
-    else
-      answer.push('fake deluxe') if number > 10 && thing.uniq.length == 1
-    end
+    answer.push('deluxe') if number % 3 != 0 && number > 10 && thing.uniq.length == 1
+    answer.push('fake deluxe') if number % 3 == 0 && number > 10 && thing.uniq.length == 1
+  
 
     return number if answer.empty?
     answer.join(" ")
@@ -20,4 +18,5 @@ class FizzBuzz
   end
 
 end
+
 
