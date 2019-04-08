@@ -1,6 +1,6 @@
-require './lib/solutions/FIZ/fizz_buzz.rb'
+require './lib/solutions/FIZ/fizz_buzz'
 
-describe Fizzbuzz do
+describe FizzBuzz do
 
   let (:fb) { FizzBuzz.new }
 
@@ -8,5 +8,10 @@ describe Fizzbuzz do
     expect(fb.fizz_buzz(3)).to eq('fizz')
   end
 
+  it "returns 'buzz' for multiples of 5" do
+    expect(fb.fizz_buzz(5)).to eq('buzz')
+  end
+
 end
+
 
