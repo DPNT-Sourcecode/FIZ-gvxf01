@@ -3,16 +3,13 @@ class FizzBuzz
 
   def fizz_buzz(number)
 
-    if number % 3 == 0
-      'fizz'
-    elsif number % 5 == 0
-      'buzz'
-    else
-      number
-    end
+    return 'fizz' if number.to_s.include? "3" || number % 3 == 0
+    return 'buzz' if number % 5 == 0
+    number
 
   end
 
 end
+
 
 
