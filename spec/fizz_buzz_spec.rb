@@ -34,6 +34,10 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(15)).to eq('fizz buzz')
     end
 
+    it "returns 'fizz buzz deluxe' for 135" do
+      expect(fb.fizz_buzz(135)).to eq('fizz buzz')
+    end
+
     it "returns 'fizz buzz' for 653" do
       expect(fb.fizz_buzz(653)).to eq('fizz buzz')
     end
@@ -58,9 +62,10 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(55)).to eq('buzz deluxe')
     end
 
-    it "returns 'fizz buzz deluxe' for 135" do
-      expect(fb.fizz_buzz(135)).to eq('fizz buzz')
+    it "returns 'fizz buzz deluxe' for 555" do
+      expect(fb.fizz_buzz(555)).to eq('fizz buzz deluxe')
     end
+
 
   end
 
@@ -74,3 +79,4 @@ describe FizzBuzz do
 
 
 end
+
