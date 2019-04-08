@@ -44,6 +44,22 @@ describe FizzBuzz do
 
   end
 
+  context "Deluxe numbers" do
+
+    it "returns 'deluxe' for 11" do
+      expect(fb.fizz_buzz(11)).to eq('deluxe')
+    end
+
+    it "returns 'fizz deluxe' for 33" do
+      expect(fb.fizz_buzz(33)).to eq('fizz deluxe')
+    end
+
+    it "returns 'buzz deluxe' for 55" do
+      expect(fb.fizz_buzz(55)).to eq('fizz deluxe')
+    end
+
+  end
+
   context "Leftovers" do
 
     it "returns '2' for 2" do
@@ -54,3 +70,4 @@ describe FizzBuzz do
 
 
 end
+
