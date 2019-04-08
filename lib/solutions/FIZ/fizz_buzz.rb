@@ -6,8 +6,9 @@ class FizzBuzz
     fizz = "fizz"
     buzz = "buzz"
     fizzbuzz = "fizz buzz"
-    number.include? 3 ? number % 5 == 0 ? return fizz_buzz : return buzz
-    number.include? 5 ? number % 3 == 0 ? return fizz_buzz : return fizz
+    number.include? 3 ? number % 5 == 0 ? answer = "fizz buzz" : answer = "nope"
+    number.include? 5 ? number % 3 == 0 ? answer = "fizz buzz" : answer = "nope"
+    puts answer
     return 'fizz' if number % 3 == 0
     return 'buzz' if number % 5 == 0
 
@@ -20,6 +21,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
