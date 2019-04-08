@@ -5,7 +5,7 @@ class FizzBuzz
 
     thing = number.to_s.chars
     print thing
-    return 'fizz buzz' if thing.include?("3") && thing.include?("5")
+    return 'fizz buzz' if thing.include?("3") && thing.include?("5") || thing.include?("3") && number % 5 == 0 || thing.include?("5") && number % 3 == 0
     return 'fizz buzz' if thing.include?("3") && number % 5 == 0
     return 'fizz buzz' if thing.include?("5") && number % 3 == 0
     return 'fizz' if number % 3 == 0 || thing.include?("3")
@@ -19,6 +19,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
