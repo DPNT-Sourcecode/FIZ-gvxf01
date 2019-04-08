@@ -3,8 +3,9 @@ class FizzBuzz
 
   def fizz_buzz(number)
 
-    (number.to_s.include? "3") ? number % 5 == 0 ? 'fizz buzz' : 'buzz'
-    (number.to_s.include? "5") ? number % 3 == 0 ? 'fizz buzz' : 'fizz'
+    string_number = number.to_s
+    string_number.include? "3" ? number % 5 == 0 ? 'fizz buzz' : 'buzz'
+    string_number.include? "5" ? number % 3 == 0 ? 'fizz buzz' : 'fizz'
     number
 
     # return 'fizz' if number.to_s.include? "3" || number % 3 == 0
@@ -14,6 +15,7 @@ class FizzBuzz
   end
 
 end
+
 
 
 
