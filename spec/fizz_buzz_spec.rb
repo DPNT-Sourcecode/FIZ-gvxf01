@@ -38,6 +38,10 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(653)).to eq('fizz buzz')
     end
 
+    it "returns 'fizz buzz' for 600" do
+      expect(fb.fizz_buzz(600)).to eq('fizz buzz')
+    end
+
   end
 
   context "Leftovers" do
@@ -50,4 +54,5 @@ describe FizzBuzz do
 
 
 end
+
 
