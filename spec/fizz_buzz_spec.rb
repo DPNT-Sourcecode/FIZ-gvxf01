@@ -74,6 +74,3 @@ describe FizzBuzz do
 
 
 end
-
-
-
