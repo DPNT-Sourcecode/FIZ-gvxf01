@@ -53,6 +53,7 @@ describe FizzBuzz do
     it "returns 'deluxe' for 22" do
       expect(fb.fizz_buzz(22)).to eq('deluxe')
     end
+  
 
   end
 
@@ -86,3 +87,4 @@ describe FizzBuzz do
 
 
 end
+
