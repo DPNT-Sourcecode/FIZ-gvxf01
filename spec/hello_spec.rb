@@ -1,10 +1,11 @@
 require './lib/solutions/HLO/hello'
 
-describe '#hello' do
+describe Hello do
 
   it "says Hello to the world" do
-    expect(hello(world)).to eq("Hello world")
+    expect(hello("Luke")).to eq("Hello Luke")
   end
 
 end
+
 
