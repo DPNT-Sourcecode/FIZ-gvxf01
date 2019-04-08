@@ -4,20 +4,26 @@ describe FizzBuzz do
 
   let (:fb) { FizzBuzz.new }
 
-  it "returns 'fizz' for multiples of 3" do
-    expect(fb.fizz_buzz(3)).to eq('fizz')
+  context "Things with 3" do
+    it "returns 'fizz' for multiples of 3" do
+      expect(fb.fizz_buzz(3)).to eq('fizz')
+    end
   end
 
-  it "returns 'buzz' for multiples of 5" do
-    expect(fb.fizz_buzz(5)).to eq('buzz')
+  context "Things with 5" do
+
+    it "returns 'buzz' for multiples of 5" do
+      expect(fb.fizz_buzz(5)).to eq('buzz')
+    end
+
   end
 
-  it "returns 'fizz buzz' for multiples of 3 and 5" do
-    expect(fb.fizz_buzz(15)).to eq('fizz buzz')
+  context "Leftovers" do
+    it "returns '2' for 2" do
+      expect(fb.fizz_buzz(2)).to eq(2)
+    end
   end
 
-  it "returns '2' for 2" do
-    expect(fb.fizz_buzz(2)).to eq(2)
-  end
 
 end
+
