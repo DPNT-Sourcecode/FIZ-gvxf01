@@ -54,10 +54,6 @@ describe FizzBuzz do
       expect(fb.fizz_buzz(22)).to eq('deluxe')
     end
 
-    it "returns 'buzz deluxe' for 55" do
-      expect(fb.fizz_buzz(55)).to eq('buzz deluxe')
-    end
-
   end
 
   context "Fake Deluxe numbers" do
@@ -68,6 +64,10 @@ describe FizzBuzz do
 
     it "returns 'fizz deluxe' for 33" do
       expect(fb.fizz_buzz(33)).to eq('fizz fake deluxe')
+    end
+
+    it "returns 'buzz deluxe' for 55" do
+      expect(fb.fizz_buzz(55)).to eq('buzz fake deluxe')
     end
 
     it "returns 'fizz buzz fake deluxe' for 555" do
@@ -86,6 +86,7 @@ describe FizzBuzz do
 
 
 end
+
 
 
 
